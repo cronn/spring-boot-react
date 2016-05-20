@@ -179,7 +179,7 @@ function render() {
           <section>
 					  <h2>Component Specs</h2>
 					  <pre><code>
-var MyComponent = React.createComponent({
+var MyComponent = React.createClass({
   render: function()
   {
     // Returns the rendered content
@@ -271,7 +271,7 @@ render: function()
 {
   var vals = [1, 2, 3, 4, 5];
   return vals.map(function(val) {
-    return &lt;button onClick={this.clicked.bind(this, val)}&gt;Button {val}&lt;/button&gt;
+    return &lt;button key={val} onClick={this.clicked.bind(this, val)}&gt;Button {val}&lt;/button&gt;
   }.bind(this));
 }
 					</code></pre>
