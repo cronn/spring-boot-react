@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
  * @author Hanno Fellmann, cronn GmbH
  */
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "de.cronn")
+@ComponentScan
 @Controller
 public class JsxDemoMain {
 	public static void main(final String[] args) throws Exception {
