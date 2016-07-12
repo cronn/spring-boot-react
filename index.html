@@ -48,7 +48,7 @@
 				
         <section>
           <section>
-            <h1>React für Java-Entwickler</h1>
+            <h1>React</h1> <h2>für Java-Entwickler</h1>
           </section>
           
           <section>
@@ -63,9 +63,6 @@
             </ul>
           </section>
           
-          <section>
-            <h2>Disclaimer: Nicht in Schönheit sterben.</h2>
-          </section>
 				</section>
                   
         <section id="slide-intro">
@@ -92,7 +89,7 @@
             </ul>
           </section>
           <section>
-            <h2>Erfahrung</h2>
+            <h2>Erfahrungen</h2>
 					  <ul>
               <li>Schmerzhaft zu lernen</li>
               <li>Zu geringes JavaScript-Knowhow</li>
@@ -100,6 +97,17 @@
               <li>Es macht keinen Spaß</li>
               <li>Unperformant</li>
               <li>Kaum wartbar</li>
+            </ul>
+          </section>
+          <section>
+            <h2>React</h2>
+					  <ul>
+              <li>Nach Eingewöhnung zu lernen</li>
+              <li>Keine Überraschungen</li>
+              <li>Keine unerwarteten Fehler</li>
+              <li>Leichtes Debugging</li>
+              <li>Performant und erprobt</li>
+              <li>Leicht wartbar</li>
             </ul>
           </section>
 				</section>
@@ -117,9 +125,6 @@
               <li>Declarative</li>
               <li>Keine Templates <blockquote>"seperation of concerns" = "seperation of technologies"</blockquote></li>
               <li>Komponentenbasiert</li>
-              <li>Einfach</li>
-              <li>Performant</li>
-              <li>Skalierbar und erprobt</li>
             </ul>
           </section>
           <section>
@@ -132,40 +137,11 @@
           <section>
 					  <h2>Components</h2>
 					  <ul>
-              <li>Props</li>
-              <li>State</li>
+            <li><strong>Props</strong>
+              <p><code>&ltMyComponent key="value" /&gt;</code></p></li>
+            <li><strong>State</strong>
+              <p><code>this.setState({"key": "value"})</code></p></li>
             </ul>
-          </section>
-          <section>
-					  <h2>Inverse Dataflow</h2>
-            <section></section>
-          </section>
-          <section>
-					  <h2>JSX</h2>
-					  <pre><code>
-function render()
-{
-  var world = "World";
-  return <font color="red">
-    Hello {world}!
-  </font>;
-}
-            </code></pre>
-          </section>
-          <section>
-					  <h2>Compiled</h2>
-					  <pre><code>
-function render() {
-  var world = "World";
-  return React.createElement(
-    "font",
-    { color: "red" },
-    "Hello ",
-    world,
-    "!"
-  );
-}
-            </code></pre>
           </section>
           <section>
 					  <h2>Component Lifecycle</h2>
@@ -199,15 +175,46 @@ var MyComponent = React.createClass({
 });
             </code></pre>
           </section>
+          <section>
+					  <h2>Inverse Dataflow</h2>
+            <section></section>
+          </section>
+          <section>
+					  <h2>JSX</h2>
+					  <pre><code>
+function render()
+{
+  var world = "World";
+  return <font color="red">
+    Hello {world}!
+  </font>;
+}
+            </code></pre>
+          </section>
+          <section>
+					  <h2>Compiled</h2>
+					  <pre><code>
+function render() {
+  var world = "World";
+  return React.createElement(
+    "font",
+    { color: "red" },
+    "Hello ",
+    world,
+    "!"
+  );
+}
+            </code></pre>
+          </section>
         </section>
         
 				<section id="slide-demo">
           <section>
             <h1>Demo</h1>
           </section>
-          <section>
+          <!--<section>
   					<iframe class="stretch" src="livecode/index.html"></iframe>
-          </section>
+          </section>-->
 				</section>
 
 
@@ -326,6 +333,15 @@ render: function()
               <li><a href="https://nodejs.org/">node.js</a> / <a href="https://www.npmjs.com">npm</a> pipeline: build, test, bundle, deploy</li>
               <li>Dataflow (<a href="https://facebook.github.io/flux">Flux</a> etc.)</li>
               <li>Router (<a href="https://github.com/reactjs/react-router">react-router</a> etc.)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Hamburg React.js Meetup</h2>
+            <p>Do., 14.07.2016, Freiheit.com</p>
+            <ul>
+              <li>Purely Functional React with Redux</li>
+              <li>Building lil applications using choo</li>
+              <li>How we do Event Handlers at Xing</li>
             </ul>
           </section>
         </section>
